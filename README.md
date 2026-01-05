@@ -12,7 +12,7 @@ Application de démonstration Streamlit avec dashboard interactif pour Azure Web
 ## 📁 Structure
 
 ```
-streamlit/
+streamlit-demo/
 ├── app.py                    # Application principale
 ├── requirements.txt          # Dépendances Python
 ├── pages/
@@ -26,15 +26,15 @@ streamlit/
 
 ### Local
 ```bash
-pip install -r streamlit/requirements.txt
-streamlit run streamlit/app.py
+pip install -r requirements.txt
+streamlit run app.py
 ```
 
 ### Azure Web App
 Cette structure est compatible avec la configuration Azure Web App :
-- Point d'entrée : `streamlit/app.py`
+- Point d'entrée : `app.py`
 - Port : 8000
-- Commande : `python -m streamlit run streamlit/app.py --server.port 8000 --server.address 0.0.0.0`
+- Commande : `python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0`
 
 ## 📊 Contenu du Dashboard
 
